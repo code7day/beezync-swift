@@ -125,3 +125,7 @@ swift test --filter LiveEngineTests
 ```
 
 Registra un dispositivo, se suscribe a un canal público, publica con la llave secreta, envía un push con `transport: "ws"`, reporta `received` y `clicked` y comprueba los contadores en `GET /v1/api/notifications/{id}`.
+
+## Autoría y licencia
+
+Beezync es un proyecto de Eduardo Flores. El servicio comercial de Beezync es respaldado y operado por ITM Soluciones Tecnológicas e Inversiones S.A.C. Este SDK se distribuye con licencia MIT (ver `LICENSE`).
