@@ -16,14 +16,14 @@ Swift Package Manager. En Xcode: File > Add Package Dependencies y elige la carp
 
 ```swift
 dependencies: [
-    .package(path: "../Add-ons/SDKs/swift")   // o .package(url: "<url del repositorio>", from: "0.1.0")
+    .package(url: "https://github.com/code7day/beezync-swift", from: "0.1.1")
 ],
 targets: [
-    .target(name: "MiApp", dependencies: [.product(name: "BeezyncSDK", package: "swift")])
+    .target(name: "MiApp", dependencies: [.product(name: "BeezyncSDK", package: "beezync-swift")])
 ]
 ```
 
-El nombre del paquete es el de la carpeta que lo contiene; el producto se llama `BeezyncSDK`.
+El producto se llama `BeezyncSDK`.
 
 ## Uso
 
@@ -126,6 +126,6 @@ swift test --filter LiveEngineTests
 
 Registra un dispositivo, se suscribe a un canal público, publica con la llave secreta, envía un push con `transport: "ws"`, reporta `received` y `clicked` y comprueba los contadores en `GET /v1/api/notifications/{id}`.
 
-## Autoría y licencia
+## Licencia
 
-Beezync es un proyecto de Eduardo Flores. El servicio comercial de Beezync es respaldado y operado por ITM Soluciones Tecnológicas e Inversiones S.A.C. Este SDK se distribuye con licencia MIT (ver `LICENSE`).
+© 2026 Beezync. Licencia MIT (ver `LICENSE`).
